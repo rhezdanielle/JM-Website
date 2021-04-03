@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display&family=Quicksand:wght@300&display=swap');
+
+html {
+    /* background image */
+    background-image: url("picture-1.png");
+    background-color: #3a3e45;
+
+    /*background img settings*/
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /*vignette*/
+    box-shadow: inset 0px 0px 200px black;
+}
+
+/*navigation*/
+
+.navigation {
+    padding-top: 10%;
+    padding-left: 70%;
+}
+
+.navigation ul li {
+    text-align: right;
+    list-style: none;
+    padding-right: 15%;
+    padding-bottom: 50px;
+}
+
+.navigation ul li button {
+    /*background color for button*/
+    background-color: transparent;
+    outline:none;
+    border: none;
+    border-radius: 4px;
+
+    /*font and text design*/
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    text-align: right;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+
+    /*cursor design*/
+    cursor: pointer;
+
+}
+
+/* hover assign */ 
+
+.navigation ul li button:hover {
+    animation-name: button-nav-hover;
+    animation: button-nav-hover-in 1s forwards;
+}
+
+/*animations*/
+
+    /* hover anims */
+
+@keyframes button-nav-hover-in{
+    10% {
+        color: white;
+        background-color:transparent;
+        font-size: 40px;
+    }
+    100%{
+        color: black;
+        background-color: rgba(255, 255, 255, 0.7);
+        font-size: 45px;
+    }
+}
