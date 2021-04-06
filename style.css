@@ -445,14 +445,15 @@ html {
 .contact-section p {
     font-family: 'Bebas Neue', sans-serif;
     color:black;
-    background-color: red;
+    background-color: rgb(182, 71, 71);
     font-size: 30px;
 
     /* ---position---*/
-    text-align: left;
+    text-align: center;
+    width: 650px;
     position: absolute;
     padding-bottom: 0px;
-    top: 100px;
+    top: 70px;
     left: 60%;
 }
 
