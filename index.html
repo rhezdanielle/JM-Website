@@ -28,18 +28,28 @@
             designer accustomed to perform in deadline-driven environment. <br>
         </p>
     </div>
+
     <div class="gallery" id = "portfolio">
         <div id="image-container"></div>
         <h2 class="work-title">Title</h2>
         <h3 class="description">Work description here</h3>
         <p class="extra-details">05/04/2021</p>
     </div>
+
     <div class="contact-section" id = "contact">
+        <p>ERROR MESSAGE</p>
+      <form action="" id="contact-form">
         <h2>Get in touch</h2>
         <h3>Enter your Name</h3>
         <h3>Enter a valid Email adress</h3>
-        <textarea name="name" id="contact-name" cols="40" rows="1"></textarea>
-        <textarea name="email" id="contact-email" cols="40" rows="1"></textarea>
+        <h3>Subject</h3>
+        <h3>Your message</h3>
+        <input type="text" name="name" id="contact-name" placeholder = "Please enter your name"cols="40" rows="1">
+        <input type="text" name="email" id="contact-email" placeholder = "Please enter a valid Email address" cols="40" rows="1">
+        <input type="text" name="subject" id="contact-subject" placeholder = "Subject" cols="40" rows="1">
+        <textarea name="message" id="contact-message" cols="63" rows="10"></textarea>
+        <button><input type= "submit"></button>
+      </form>
     </div>
     <link rel="stylesheet" href="index.css">
 </body>
